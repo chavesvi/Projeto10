@@ -3,7 +3,6 @@ package entities;
 public class OrderItem {
 	
 	private Integer quantity;
-	
 	private Product p;
 	
 	public OrderItem() {

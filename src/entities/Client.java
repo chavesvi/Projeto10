@@ -40,6 +40,11 @@ public class Client {
 	public void setBirth_date(Date birth_date) {
 		this.birth_date = birth_date;
 	}
+
+	@Override
+	public String toString() {
+		return "Client [name=" + name + "]";
+	}
 	
 	
 

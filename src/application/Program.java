@@ -32,12 +32,14 @@ public class Program {
 		Client x = new Client(name, email, date);
 		order.setClient(x);
 		
+		
 		System.out.println("Enter order data:");
 		System.out.print("Status: ");
 		OrderStatus os = OrderStatus.valueOf(sc.next());
 		order.setStatus(os);	
 		System.out.print("How many items to this order? ");
-		for (int i=0; i<sc.nextInt(); i++) {
+		int n = sc.nextInt();
+		for (int i=0; i<n; i++) {
 			System.out.println("Enter #"+ (i + 1) +" item data:");
 			System.out.print("Product name: ");
 			sc.nextLine();
@@ -51,9 +53,26 @@ public class Program {
 			order.addItem(order_item);
 		}
 		
+		/*
+		System.out.println("Enter vendor data:");
+		System.out.print("Name: ");
+		sc.nextLine();
+		String nameV = sc.nextLine();
+		System.out.print("Email: ");
+		String emailV = sc.next();
+		System.out.print("Fixed Salary: ");
+		Double fixedSal = sc.nextDouble();
+		Vendor v = new Vendor(nameV, emailV, fixedSal);
+		*/
+		
+		/*
 		System.out.println();
 		System.out.println("ORDER SUMMARY: ");
 		System.out.println(order);
+		*/
+		
+		// teste
+		
 		
 		sc.close();
 		

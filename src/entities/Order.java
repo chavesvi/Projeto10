@@ -18,6 +18,7 @@ public class Order {
 	
 	private List<OrderItem> items = new ArrayList<>();
 	
+	
 	public Order() {
 	}
 
@@ -27,6 +28,8 @@ public class Order {
 		this.client = client;
 	}
 
+	
+	
 	public String getMoment() {
 		return sdf.format(moment);
 	}
@@ -34,6 +37,7 @@ public class Order {
 	public void setMoment(Date moment) {
 		this.moment = moment;
 	}
+	
 
 	public OrderStatus getStatus() {
 		return status;
@@ -42,6 +46,7 @@ public class Order {
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
+	
 
 	public Client getClient() {
 		return client;
@@ -50,7 +55,7 @@ public class Order {
 	public void setClient(Client client) {
 		this.client = client;
 	}
-
+	
 	public List<OrderItem> getItems() {
 		return items;
 	}
@@ -71,6 +76,7 @@ public class Order {
 		return total;
 	}
 	
+	
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Order moment: " + sdf.format(moment) + "\n");
@@ -84,4 +90,5 @@ public class Order {
 		return sb.toString();
 				
 	} 
+	
 }
